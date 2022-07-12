@@ -43,3 +43,17 @@
   transition: 0.5s;
   box-shadow: 5px 5px 5px 5px transparent;
 }
+
+@media only screen and (max-width: 600px) {
+  .input {
+    width: 100%;
+  }
+  .input input {
+    height: 1.7rem;
+    width: 100%;
+  }
+
+  .btn {
+    font-size: 1rem;
+  }
+}

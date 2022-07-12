@@ -58,8 +58,12 @@
 }
 
 h1 {
-  font-size: 2rem;
   text-align: center;
   color: var(--h1-color);
   font-weight: 500;
+}
+
+html,
+body {
+  overflow-x: hidden;
 }

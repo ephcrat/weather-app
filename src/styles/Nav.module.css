@@ -4,13 +4,12 @@
   left: 0;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  margin: 0 auto;
-  width: 100%;
   background-color: var(--background-low-oppacity);
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
   box-sizing: border-box;
+  margin: 0 auto;
 }
 
 .about {
@@ -22,21 +21,35 @@
 }
 
 .about:hover {
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   font-weight: 500;
   transition: 0.5s;
 }
 
 .nav nav {
   height: 100%;
+  width: 100vh;
 }
 
-.nav > h1 {
-  font-size: 1.5rem;
-  margin: 0 auto;
-  padding-right: 40%;
+h1 {
+  margin: 0.67em 0;
+  padding-right: 2rem;
+  font-size: 2rem;
+  font-weight: 700;
 }
 
 .logo {
   text-decoration: none;
+}
+
+@media only screen and (max-width: 900px) {
+  h1 {
+    font-size: 1.2rem;
+    margin-right: 1rem;
+  }
+
+  .about {
+    padding-left: 5%;
+    font-size: 1.1rem;
+  }
 }

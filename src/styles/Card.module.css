@@ -46,7 +46,7 @@
   justify-content: center;
   text-decoration: none;
   color: var(--h1-color);
-  word-break: break-all;
+  word-break: keep-all;
 }
 
 .temps {

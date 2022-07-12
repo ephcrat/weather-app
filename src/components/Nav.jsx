@@ -13,7 +13,7 @@ function Nav({ onSearch }) {
       <Link to="/about" className={styles.about}>
         <span>About</span>
       </Link>
-      <SearchBar onSearch={onSearch} />
+      <SearchBar className={styles.sb}onSearch={onSearch} />
     </nav>
   );
 }

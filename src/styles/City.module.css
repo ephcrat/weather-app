@@ -1,0 +1,25 @@
+.ciudad {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  margin: 0 auto;
+  margin-top: 2rem;
+  padding: 1rem 1.5rem;
+  width: 11rem;
+  height: 15rem;
+  line-height: 1.5rem;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 0.5em;
+  border-color: transparent;
+  background-color: var(--background-low-oppacity);
+  text-align: center;
+  justify-content: center;
+  color: var(--color-soft-prickle);
+}
+.container span {
+  font-weight: 700;
+}
