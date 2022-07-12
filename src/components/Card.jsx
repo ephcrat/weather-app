@@ -1,22 +1,34 @@
 import React from "react";
 import CardTemp from "./CardTemp";
 import PropTypes from "prop-types";
+import cardstyle from "../styles/Card.module.css";
+import { Link } from "react-router-dom";
 
-function Card({ max, min, name, img, onClose }) {
+function Card({ max, min, name, img, id, onClose }) {
   // acá va tu código
   function handleOnClose() {
     if (typeof onClose === "function") onClose();
   }
   return (
-    <div>
-      <button onClick={handleOnClose}>X</button>
-      <span>{name}</span>
-      <CardTemp label="Min" value={min} />
-      <CardTemp label="Max" value={max} />
-      <img
-        src={`http://openweathermap.org/img/wn/${img}@2x.png`}
-        alt="weather"
-      />
+    <div className={cardstyle.div}>
+      <Link style={{ textDecoration: "none" }} to={`/city/${id}`}>
+        <div>
+          <button className={cardstyle.btn} onClick={handleOnClose}>
+            X
+          </button>
+        </div>
+
+        <span className={cardstyle.name}>{name}</span>
+
+        <img
+          src={`http://openweathermap.org/img/wn/${img}@2x.png`}
+          alt="weather"
+        />
+        <div className={cardstyle.temps}>
+          <CardTemp className={cardstyle.tempMin} label="Min" value={min} />
+          <CardTemp className={cardstyle.tempMax} label="Max" value={max} />
+        </div>
+      </Link>
     </div>
   );
 }

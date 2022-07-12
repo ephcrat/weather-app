@@ -1,0 +1,65 @@
+@import "./normalize.css";
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap");
+
+:root {
+  min-height: 100%;
+  font-family: "Quicksand", sans-serif;
+  background: hsla(213, 62%, 45%, 1);
+
+  /* background: linear-gradient(
+    90deg,
+    hsla(213, 62%, 45%, 1) 0%,
+    hsla(203, 89%, 71%, 1) 50%,
+    hsla(0, 0%, 96%, 1) 100%
+  ); */
+
+  /* background: -moz-linear-gradient(
+    90deg,
+    hsla(213, 62%, 45%, 1) 0%,
+    hsla(203, 89%, 71%, 1) 50%,
+    hsla(0, 0%, 96%, 1) 100%
+  ); */
+
+  background: var(--background-gradient);
+
+  /* filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#2C6CBC", endColorstr="#71C3F7", GradientType=1 ); */
+  /* variables */
+  --background-gradient: linear-gradient(
+    to bottom left,
+    hsla(213, 62%, 45%, 1) 0%,
+    hsla(203, 89%, 71%, 1) 50%,
+    hsla(0, 0%, 96%, 1) 100%
+  );
+
+  --background-gradient-low-oppacity: linear-gradient(
+    90deg,
+    hsla(213, 62%, 45%, 0.6) 0%,
+    hsla(203, 89%, 71%, 0.6) 50%,
+    hsla(0, 0%, 96%, 0.6) 100%
+  );
+
+  --button-gradient: -webkit-linear-gradient(
+    90deg,
+    hsla(213, 62%, 45%, 1) 0%,
+    hsla(203, 89%, 71%, 1) 50%,
+    hsla(0, 0%, 96%, 1) 100%
+  );
+
+  --close-button-gradient: linear-gradient(
+    90deg,
+    hsla(341, 94%, 49%, 1) 0%,
+    hsla(16, 90%, 77%, 1) 100%
+  );
+  --background-low-oppacity: rgba(22, 54, 93, 0.3);
+  --prussian-blue: #16365d;
+  --h1-color: var(--color-soft-prickle);
+  --color-soft-prickle: #edf6f9;
+  --text-primary: #1c1c1c;
+}
+
+h1 {
+  font-size: 2rem;
+  text-align: center;
+  color: var(--h1-color);
+  font-weight: 500;
+}

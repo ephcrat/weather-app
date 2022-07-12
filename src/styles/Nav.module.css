@@ -1,0 +1,42 @@
+.nav {
+  display: flex;
+  top: 0;
+  left: 0;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin: 0 auto;
+  width: 100%;
+  background-color: var(--background-low-oppacity);
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.about {
+  text-decoration: none;
+  color: var(--h1-color);
+  font-size: 1.5rem;
+  padding-left: 40%;
+  cursor: pointer;
+}
+
+.about:hover {
+  font-size: 1.7rem;
+  font-weight: 500;
+  transition: 0.5s;
+}
+
+.nav nav {
+  height: 100%;
+}
+
+.nav > h1 {
+  font-size: 1.5rem;
+  margin: 0 auto;
+  padding-right: 40%;
+}
+
+.logo {
+  text-decoration: none;
+}

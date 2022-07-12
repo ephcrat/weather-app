@@ -1,10 +1,9 @@
 import React from "react";
 
-export default function CardTemp({ label, value }) {
+export default function CardTemp({ label, value, className = "" }) {
   return (
-    <div>
-      <label>{label}</label>
-      <span>{value}</span>
+    <div className={className}>
+      <label>{label}</label>: <span>{value}</span>
     </div>
   );
 }
